@@ -26,13 +26,43 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+    - .map modifies and returns a new array leaving the original untouched.
+
+        - Say you have an array of objects with names of students that are in lowercase and you want to return a new array with those names capitalized. You can use .map and it will iterate through each element and return a new array with the modifications you set.
+
+
+    - .filter returns a new array with only the elements that meet a condition.
+
+        - Say you have an array of values and you want to only return an array of odd numbers. You can use .filter and it will do just that.
+
+
+    - .reduce takes an array of values and reduces it down to a single value.
+
+        - Say you have an array of object with name and price of an item and you want to return the total price. You can use .reduce and it will loop through and accumulate the prices.
+
+
 2. Explain the difference between a callback and a higher order function.
+
+    Callback functions is passed to another function and higher order functions take another function as an argument.
 
 3. Explain what a closure is.
 
+    Closures are when you have a function inside of another function and it calls variables and scope of the outer function.
+
 4. Describe the four principles of the 'this' keyword.
 
+    - Global/Window - Has no context so 'this' will be bound to the global object which is everything in the window.
+    - Implicit binding - When invoked 'this' will refer to the object left of the dot.
+    - New binding - the 'new' keyword will create a new object where 'this' will refer to the newly created object.
+    - Explicit binding:
+        .call calls the function and passes arguments 1 by 1 which will reference 'this' within the function.
+        .apply is same as call but takes an array of arguments instead.
+        .bind is also same as call but returns a function that can be invoked later.
+        
+
 5. Why do we need super() in an extended class?
+
+    super() will call the constructor of the class you extend and will inherit the parent's properties/methods.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
