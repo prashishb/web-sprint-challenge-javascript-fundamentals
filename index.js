@@ -76,10 +76,9 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(arr){
-    const mappedNames = arr.map((elem) => elem.animal_name.toLowerCase());
-    return mappedNames;
+    return arr.map((elem) => elem.animal_name.toLowerCase());
   }
-
+  
   console.log(lowerCaseNames(zooAnimals));
   
   
@@ -88,9 +87,11 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(arr){
+   return arr.filter((elem) => elem.population < 5);
   }
+
+  console.log(lowPopulationAnimals(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
